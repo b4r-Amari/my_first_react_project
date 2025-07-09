@@ -20,7 +20,7 @@ MovieLand is a simple movie search application built with [React](https://react.
    - Each movie is displayed using the [`MovieCard`](src/MovieCard.jsx) component.
 
 3. **Styling:**  
-   - The app uses custom CSS in [`App.css`](src/App.css) for layout and styling.
+   - The app uses CSS in [`App.css`](src/App.css) for layout and styling.
    - The UI is responsive and adapts to different screen sizes.
 
 ## Getting Started
