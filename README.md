@@ -1,3 +1,78 @@
+# MovieLand - My First React App
+
+MovieLand is a simple movie search application built with [React](https://react.dev/). It allows users to search for movies by title and displays results fetched from the [OMDb API](https://www.omdbapi.com/).
+
+## Features
+
+- Search for movies by title
+- View movie posters, titles, years, and types
+- Responsive and modern UI
+
+## How It Works
+
+1. **React Setup:**  
+   The project was bootstrapped using [Create React App](https://github.com/facebook/create-react-app), which provides a modern build setup with no configuration.
+
+2. **Movie Search:**  
+   - The main logic is in [`App.js`](src/App.js), which manages the state for the search term and the list of movies.
+   - When the app loads, it fetches and displays movies with the default search term "Batman".
+   - Users can type a movie title in the search box and click the search icon to fetch results from the OMDb API.
+   - Each movie is displayed using the [`MovieCard`](src/MovieCard.jsx) component.
+
+3. **Styling:**  
+   - The app uses custom CSS in [`App.css`](src/App.css) for layout and styling.
+   - The UI is responsive and adapts to different screen sizes.
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) and npm installed on your machine.
+
+### Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/react_practice.git
+   cd react_practice
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```sh
+   npm start
+   ```
+   The app will open at [http://localhost:3000](http://localhost:3000).
+
+## Project Structure
+
+- [`src/App.js`](src/App.js): Main application logic and state management.
+- [`src/MovieCard.jsx`](src/MovieCard.jsx): Component for displaying individual movie details.
+- [`src/App.css`](src/App.css): Styling for the app.
+- [`src/index.js`](src/index.js): Entry point for the React app.
+
+## How We Built It
+
+- Used functional components and React hooks (`useState`, `useEffect`) for state and lifecycle management.
+- Fetched movie data from the OMDb API using JavaScript's `fetch` API.
+- Managed user input and displayed search results dynamically.
+- Applied custom CSS for a clean and modern look.
+
+## Customization
+
+- You can change the default search term in [`App.js`](src/App.js) by editing the `useEffect` call.
+- To use your own OMDb API key, replace the `apikey` value in the `API_UR` variable in [`App.js`](src/App.js).
+
+## License
+
+This project is for learning and personal use.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -30,41 +105,3 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
